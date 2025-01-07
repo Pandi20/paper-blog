@@ -1,18 +1,16 @@
 ---
+ogImage: ../../assets/images/AstroPaper-v4.png
+title: AstroPaper 4.0
 author: Sat Naing
 pubDatetime: 2024-01-04T09:30:41.816Z
-title: AstroPaper 4.0
-slug: "astro-paper-v4"
+slug: astro-paper-v4
 featured: true
-ogImage: ../../assets/images/AstroPaper-v4.png
 tags:
   - release
-description: "AstroPaper v4: ensuring a smoother and more feature-rich blogging experience."
+description: 'AstroPaper v4: ensuring a smoother and more feature-rich blogging experience.'
 ---
 
 Hello everyone! Wishing you a happy New Year 🎉 and all the best for 2024! We're excited to announce the release of AstroPaper v4, a significant update that introduces a range of new features, improvements, and bug fixes to elevate your blogging experience. A big thank you to all the contributors for their valuable input and efforts in making version 4 possible!
-
-![AstroPaper v4](@assets/images/AstroPaper-v4.png)
 
 ## Table of contents
 
@@ -28,7 +26,7 @@ AstroPaper now leverages the power and capabilities of Astro v4. However, it’s
 
 The `postSlug` in the blog content schema is no longer available in AstroPaper v4. Initially Astro doesn't have a `slug` mechanism and thus we have to figure it out on our own. Since Astro v3, it supports content collection and slug features. Now, we believe it's time to adopt Astro's out-of-the-box `slug` feature.
 
-**_file: src/content/blog/astro-paper-4.md_**
+***file: src/content/blog/astro-paper-4.md***
 
 ```bash
 ---
@@ -51,6 +49,8 @@ If you're upgrading AstroPaper from v3 to v4, make sure to replace `postSlug` in
 AstroPaper now includes VSCode snippets for new blog posts, eliminating the need for manual copy/pasting of the frontmatter and content structure (table of contents, heading, excerpt, etc.).
 
 Read more about VSCode Snippets [here](https://code.visualstudio.com/docs/editor/userdefinedsnippets#:~:text=In%20Visual%20Studio%20Code%2C%20snippets,Snippet%20in%20the%20Command%20Palette).
+
+[f](https://tina.io/docs/tina-cloud/dashboard/projects#api-tokens)
 
 <video autoplay muted="muted" controls plays-inline="true" class="border border-skin-line">
   <source src="https://github.com/satnaing/astro-paper/assets/53733092/136f1903-bade-40a2-b6bb-285a3c726350" type="video/mp4">

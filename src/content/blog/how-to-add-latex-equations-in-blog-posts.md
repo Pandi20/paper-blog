@@ -1,7 +1,8 @@
 ---
-author: Alberto Perdomo
-pubDatetime: 2024-09-08T20:58:52.737Z
 title: Adding LaTeX Equations in AstroPaper blog posts
+author: Alberto Perdomo
+pubDatetime: 2024-09-09T20:58:52.000Z
+slug: amigp
 featured: false
 tags:
   - rendering
@@ -18,7 +19,6 @@ This document demonstrates how to use LaTeX equations in your Markdown files for
 In this section, you will find instructions on how to add support for LaTeX in your Markdown files for AstroPaper.
 
 1. Install the necessary remark and rehype plugins by running `npm install rehype-katex remark-math katex`.
-
 2. Update the Astro configuration (`astro.config.ts`) to use the these plugins:
 
 ```ts
@@ -46,7 +46,7 @@ export default defineConfig({
 });
 ```
 
-3. Import KaTeX CSS in the main layout file `src/layouts/Layout.astro`
+1. Import KaTeX CSS in the main layout file `src/layouts/Layout.astro`
 
 ```astro
 ---
@@ -68,7 +68,7 @@ import { LOCALE, SITE } from "@config";
 </body>
 ```
 
-And _voilà_, this setup allows you to write LaTeX equations in your Markdown files, which will be rendered properly when the site is built. Once you do it, the rest of the document will appear rendered correctly.
+And *voilà*, this setup allows you to write LaTeX equations in your Markdown files, which will be rendered properly when the site is built. Once you do it, the rest of the document will appear rendered correctly.
 
 ## Inline Equations
 
@@ -111,7 +111,7 @@ $$
 
 LaTeX provides a wide range of mathematical symbols:
 
-- Greek letters: `$\alpha$`, `$\beta$`, `$\gamma$`, `$\delta$`, `$\epsilon$`, `$\pi$`
-- Operators: `$\sum$`, `$\prod$`, `$\int$`, `$\partial$`, `$\nabla$`
-- Relations: `$\leq$`, `$\geq$`, `$\approx$`, `$\sim$`, `$\propto$`
-- Logical symbols: `$\forall$`, `$\exists$`, `$\neg$`, `$\wedge$`, `$\vee$`
+* Greek letters: `$\alpha$`, `$\beta$`, `$\gamma$`, `$\delta$`, `$\epsilon$`, `$\pi$`
+* Operators: `$\sum$`, `$\prod$`, `$\int$`, `$\partial$`, `$\nabla$`
+* Relations: `$\leq$`, `$\geq$`, `$\approx$`, `$\sim$`, `$\propto$`
+* Logical symbols: `$\forall$`, `$\exists$`, `$\neg$`, `$\wedge$`, `$\vee$`
